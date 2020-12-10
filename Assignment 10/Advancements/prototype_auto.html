@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            addautocomplete('#website', 'subs_account','email');
+            addautocomplete('#email', 'subs_account', 'username');
+            // add auto complete capabilites to the input fields(only those having the type text) here 
+        });
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id='website'>
+        <input type="text" id="email">
+    </form>
+</body>
+</html>
